@@ -67,59 +67,59 @@
  * アロー関数
  */
 //従来の関数1
-function func1(str) {
-  return str;
-}
-console.log(func1("func1です"));
+// function func1(str) {
+//   return str;
+// }
+// console.log(func1("func1です"));
 
 // アロー関数2
-const func2 = (str) =>{
-  return str;
-}
-console.log(func2("func2です"));
+// const func2 = (str) =>{
+//   return str;
+// }
+// console.log(func2("func2です"));
 
 // アロー関数3
-const func3 = (str) => str;
-console.log(func3("func3です"));
+// const func3 = (str) => str;
+// console.log(func3("func3です"));
 
 // アロー関数4
-const func4 = (num1, num2) => {
-  return num1 + num2;
-};
+// const func4 = (num1, num2) => {
+//   return num1 + num2;
+// };
 
-console.log(func4(10, 20));
+// console.log(func4(10, 20));
 
 /**
  * 分割代入
  */
 
-const myProfile = {
-  name: "田中",
-  age: 28,
-};
+// const myProfile = {
+//   name: "田中",
+//   age: 28,
+// };
 
-const message1 = `名前は${myProfile.name}です。年齢は${myProfile.age}歳です。`;
-console.log(message1);
+// const message1 = `名前は${myProfile.name}です。年齢は${myProfile.age}歳です。`;
+// console.log(message1);
 
-const { name, age } = myProfile;
-const message2 = `名前は${name}です。年齢は${age}歳です。`;
-console.log(message2);
+// const { name, age } = myProfile;
+// const message2 = `名前は${name}です。年齢は${age}歳です。`;
+// console.log(message2);
 
 //分割代入は配列でも使用可能
-const myProfile3 = ['田中', 28];
+// const myProfile3 = ['田中', 28];
 
-const message3 = `名前は${myProfile3[0]}です。年齢は${myProfile3[1]}歳です。`;
-console.log(message3);
+// const message3 = `名前は${myProfile3[0]}です。年齢は${myProfile3[1]}歳です。`;
+// console.log(message3);
 
-const [name4, age4] = myProfile3;
-const message4 = `名前は${name4}です。年齢は${age4}歳です。`;
-console.log(message4);
+// const [name4, age4] = myProfile3;
+// const message4 = `名前は${name4}です。年齢は${age4}歳です。`;
+// console.log(message4);
 
 /**
  * デフォルト値、引数など
  */
-const sayHello = (name = "ゲスト") => console.log(`こんにちは！${name}さん！`);
-sayHello();
+// const sayHello = (name = "ゲスト") => console.log(`こんにちは！${name}さん！`);
+// sayHello();
 
 // /**
 //  * スプレッド構文 ...
@@ -141,13 +141,13 @@ sayHello();
 // console.log(arr3);
 
 // 配列のコピー、結合
-const arr4 = [10, 20];
-const arr5 = [30, 40];
+// const arr4 = [10, 20];
+// const arr5 = [30, 40];
 
-const arr6 = [...arr4];
-arr6[0] = 100;
-console.log(arr6);
-console.log(arr4);
+// const arr6 = [...arr4];
+// arr6[0] = 100;
+// console.log(arr6);
+// console.log(arr4);
 
 // const arr7 = [...arr4, ...arr5];
 // console.log(arr7);
@@ -162,7 +162,7 @@ console.log(arr4);
 /**
  * mapやfilterを使った配列の処理
  */
-const nameArr = ["田中", "山田", "じゃけぇ"];
+// const nameArr = ["田中", "山田", "じゃけぇ"];
 // for (let index = 0; index < nameArr.length; index++){
 //   console.log(`${index + 1}番目は${nameArr[index]}です。`);
 // }
@@ -172,7 +172,7 @@ const nameArr = ["田中", "山田", "じゃけぇ"];
 // })
 // console.log(nameArr2);
 
-nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です。`));
+// nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です。`));
 
 // const numArr = [1, 2, 3, 4, 5];
 // const newNumArr = numArr.filter((num) => {
@@ -180,14 +180,36 @@ nameArr.map((name, index) => console.log(`${index + 1}番目は${name}です。`
 // });
 // console.log(newNumArr);
 
-const newNameArr = nameArr.map((name) => {
-  if (name ==="じゃけぇ"){
-    return name
-  } else {
-    return `${name}さん`
-  }
-});
-console.log(newNameArr);
+// const newNameArr = nameArr.map((name) => {
+//   if (name ==="じゃけぇ"){
+//     return name
+//   } else {
+//     return `${name}さん`
+//   }
+// });
+// console.log(newNameArr);
+
+/**
+ * 三項演算子
+ */
+// ある条件 ? 条件がtrueの時: 条件がfalseの時
+const val1 = 1 < 0 ? 'trueです' : 'falseです';
+console.log(val1);
+
+const num = 1300;
+const str = "1300";
+console.log(num.toLocaleString());
+console.log(str.toLocaleString());
+
+const formattedNum = typeof num === 'number' ? num.toLocaleString() : '数値を入力してください';
+const formattedStr = typeof str === 'number' ? str.toLocaleString() : '数値を入力してください';
+console.log(formattedNum);
+console.log(formattedStr);
+
+
+
+
+
 
 
 
