@@ -105,5 +105,18 @@ const { name, age } = myProfile;
 const message2 = `名前は${name}です。年齢は${age}歳です。`;
 console.log(message2);
 
+//分割代入は配列でも使用可能
+const myProfile3 = ['田中', 28];
+
+const message3 = `名前は${myProfile3[0]}です。年齢は${myProfile3[1]}歳です。`;
+console.log(message3);
+
+const [name4, age4] = myProfile3;
+const message4 = `名前は${name4}です。年齢は${age4}歳です。`;
+console.log(message4);
+
+
+
+
 
 
