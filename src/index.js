@@ -226,6 +226,13 @@ if (flag1 && flag2){
   console.log("1も2もtrueになります");
 }
 
+// || は左側がfalseなら右側を返す
+const num = 100;
+const fee = num || "金額未設定です";
+console.log(fee);
+
+
+
 
 
 
