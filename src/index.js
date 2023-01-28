@@ -78,3 +78,8 @@ const func2 = (str) =>{
 }
 console.log(func2("func2です"));
 
+// アロー関数
+const func3 = (str) => str;
+console.log(func3("func3です"));
+
+
