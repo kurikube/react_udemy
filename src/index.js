@@ -118,10 +118,16 @@ console.log(message4);
 /**
  * デフォルト値、引数など
  */
-const sayHello = (name) => console.log(`こんにちは！${name}さん！`);
-sayHello("田中");
+const sayHello = (name = "ゲスト") => console.log(`こんにちは！${name}さん！`);
+sayHello();
 
-
+/**
+ * スプレッド構文 ...
+ */
+// 配列の展開
+const arr1 = [1, 2];
+console.log(arr1);
+console.log(...arr1);
 
 
 
