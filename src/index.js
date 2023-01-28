@@ -87,7 +87,7 @@ const func4 = (num1, num2) => {
   return num1 + num2;
 };
 
-console.log(func4(10, 20));
+console.log(func4(10, 20)); 
 
 
 
