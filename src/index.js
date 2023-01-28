@@ -66,20 +66,28 @@
 /**
  * アロー関数
  */
-//従来の関数
+//従来の関数1
 function func1(str) {
   return str;
 }
 console.log(func1("func1です"));
 
-// アロー関数
+// アロー関数2
 const func2 = (str) =>{
   return str;
 }
 console.log(func2("func2です"));
 
-// アロー関数
+// アロー関数3
 const func3 = (str) => str;
 console.log(func3("func3です"));
+
+// アロー関数4
+const func4 = (num1, num2) => {
+  return num1 + num2;
+};
+
+console.log(func4(10, 20));
+
 
 
