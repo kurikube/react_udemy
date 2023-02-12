@@ -12,4 +12,3 @@ document
     .getElementById("add-button")
     .addEventListener("click", () => onClickAdd());
 
-console.log(document.getElementById("add-button"));
